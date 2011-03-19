@@ -1,0 +1,15 @@
+#membro
+{
+width:500px;padding:10px 20px;border:1px solid;float:left;height:250px;
+}
+
+#topicos
+{
+margin-left:550px;border:1px solid;height:250px;
+padding:10px;
+}
+
+#topicos ul
+{
+	margin:10px;
+}
