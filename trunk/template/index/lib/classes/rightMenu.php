@@ -3,7 +3,8 @@
 	{
 		function __construct ()
 		{
-	echo "right believer";
+
+			echo "right believer";
 			
 		}
 	

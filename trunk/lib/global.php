@@ -2,7 +2,8 @@
 $script_start=0;
 set_time_limit(5);
 
-//session_start();
+session_start();
+$_SESSION['path_class']="";
 
 function sendcompressedcontent( $content )
 {

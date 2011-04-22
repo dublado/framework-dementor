@@ -13,7 +13,7 @@
 		#	Constructor
 		function __construct ($base)
 		{
-		//echo "mamae";
+		echo "mamae";
 		
 		set_include_path(base."/".$base);
 		echo get_include_path();
