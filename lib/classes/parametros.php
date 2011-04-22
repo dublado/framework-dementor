@@ -15,6 +15,7 @@ if(defined('mode'))
 			$load['erros'] = true;
 		break;
 		default:
+			$load['erros'] = true;
 	}
 }
 

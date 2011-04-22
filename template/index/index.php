@@ -1,5 +1,8 @@
 hey earl, hey crabman<br>
 <?php	
-new leftMenu();
-new rightMenu();
-new twitterfoz();
+loader("leftMenu");
+loader("rightMenu");
+loader("twitterfoz");
+loader("forum/teste");
+
+

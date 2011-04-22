@@ -2,7 +2,7 @@
 require_once("lib/global.php");
 
 $classe=parametros(0);
-new $classe;
+loader($classe);
 /*
 switch(parametros(0))
 {

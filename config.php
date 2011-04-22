@@ -1,6 +1,9 @@
 <?php
-define("Titulo","Clube de Lideres Online"); //define titulo padrao
 define("Ambiente","local"); //prod e local
+define("Erro404",true);
+
+define("Titulo","Clube de Lideres Online"); //define titulo padrao
+
 
 $_base['prod'] = array
 (

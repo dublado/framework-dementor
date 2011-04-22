@@ -32,8 +32,8 @@ class siteman
 			$this->titulo .= ' - ' . $args['titulo'];}
 
 			//var_dump($args);
-			$meta[] = '<meta http-equiv="Contet-type" content="text/html; charset=utf-8" />';
-			$meta[] = '<meta name="keywords" lang="pt-br" content="PALAVRAS, CHAVE, POR, VIRGULA" />';
+			$meta[] = '<meta http-equiv="Contet-type" content="text/html; charset=utf-8"/>';
+			$meta[] = '<meta name="keywords" lang="pt-br" content="PALAVRAS, CHAVE, POR, VIRGULA"/>';
 			if(isset($args['description'])){ $meta[] = '<meta name="description" content="'.$args['description'].'" />'; }
 
 			$title = '<title>'. $this->titulo.'</title>';
@@ -110,7 +110,6 @@ class siteman
 		set_include_path($dopath);
 		//echo get_include_path();exit;
 		require_once("index.php");
-			
 		set_include_path($previouspath);
 		
 	}
