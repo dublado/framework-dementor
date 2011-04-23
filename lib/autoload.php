@@ -1,6 +1,15 @@
 <?php
+function class_preloader($param="",$class,$path="")
+{
+
+loader($class,$param);
+
+}
+
+
 function loader($class,$param="",$path="")
 { 
+
 	if($param==""){$param=null;}
 
 	$find_class = strpos($class,'/');
@@ -10,7 +19,8 @@ function loader($class,$param="",$path="")
 
 	switch($class)
 	{
-	    case "template":echo "oh noooooooooo";break;	
+	    case "template"://echo "oh noooooooooo";
+	    break;	
 		default:
 	new $class($param); 
 	}
@@ -73,7 +83,7 @@ function __autoload($class_name)
 				    //error_log("Pagina carregada: " . $php);
 				    if(file_exists($php)){ require_once($php);  if(!class_exists($class_name)){echo "a classe $class_name não existe dentro de $php!";return false;}   }else{
 
-if(erro404)
+if(Erro404)
 {
 require_once(base . '/template/404/404.htm');
 }else{

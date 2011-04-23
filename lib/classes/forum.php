@@ -16,12 +16,12 @@ class forum extends siteman
 		));
 		
 		
-		//$this->bd = new BDo();
+		$this->bd = new BDo();
 	
-		//$sql = "select * from membros where nome = '".parametros(1)."'";//echo $sql;
-		//$rss = $this->bd->query($sql);
-		//$membro = $rss->fetchObject();	
-		//echo $membro->nome;
+		$sql = "select * from membros where nome = '".parametros(1)."'";//echo $sql;
+		$rss = $this->bd->query($sql);
+		$this->membro = $rss->fetchObject();	
+		
 		
 	}
 	

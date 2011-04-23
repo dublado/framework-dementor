@@ -8,12 +8,6 @@ loader("global/leftMenu");
 ?>
 <br clear="both"/>
 </div>
-<div class="mright"><?php	
-loader("global/rightMenu");
-loader("global/twitterfoz");
-?>
-<br clear="both"/>
-</div>
 <div class="meio">
 <?php
 

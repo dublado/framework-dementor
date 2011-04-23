@@ -17,7 +17,6 @@ class siteman
 		{$args=func_get_arg(0);}else{$args="";}
 		$this->args=$args;
 		//$scriptname = pathinfo($_SERVER["PHP_SELF"]);$scriptname=$scriptname["filename"];
-//phpinfo();
 
 		$scriptname = parametros(0);//echo $scriptname;
 		$this->base = 'template/' . $scriptname;
@@ -148,7 +147,7 @@ class siteman
 				//echo "pump: " . dirname(__FILE__)."/../../".$this->base . "<br>";
 /*				
 				set_include_path(base."/".$this->base."/");
-				$html = $this->base.'/'.$this->pagina.'.html';//echo $html;//phpinfo();
+				$html = $this->base.'/'.$this->pagina.'.html';//echo $html;
 				if(file_exists($html)){
 					require_once($html);
 				}

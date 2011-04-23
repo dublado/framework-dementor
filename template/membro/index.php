@@ -8,7 +8,7 @@ var_dump($rs);
 */
 ?><div id="membro">
 <?php
-	new model($membro);
+	loader("model",$membro);
 ?></div>
 <div id="topicos">
 RECENTES | MAIS MOVIMENTADOS | 
