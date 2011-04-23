@@ -1,5 +1,14 @@
 <?php
-define("Ambiente","local"); //prod e local
+
+switch($_SERVER['HTTP_HOST'])
+{
+    case "localhost":
+        define("Ambiente","local"); //prod e local
+    break;
+    default:
+        define("Ambiente","prod"); //prod e local
+}
+
 define("Erro404",true);
 
 define("Titulo","Clube de Lideres Online"); //define titulo padrao
@@ -7,8 +16,8 @@ define("Titulo","Clube de Lideres Online"); //define titulo padrao
 
 $_base['prod'] = array
 (
-	"base"		=>	"/home/users/web/b568/moo.sportweb/atreyocom/LABS/clo",
-	"base_url"	=>	"http://www.clubedelider.org/"
+	"base"		=>	"/home1/atreyoco/public_html/clubedelider/clo",
+	"base_url"	=>	"http://www.clubedelider.org/clo/"
 );
 
 $_base['local'] = array
@@ -54,8 +63,8 @@ switch(Ambiente){
 	break;
 }
 
-define("base","/var/www/dementor/framework-dementor");
-define("base_url","http://localhost/dementor/framework-dementor/"); 
+define("base",$_base[Ambiente]['base']);
+define("base_url",$_base[Ambiente]['base_url']); 
 
 set_include_path(base);
 
