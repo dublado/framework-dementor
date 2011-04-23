@@ -1,0 +1,5 @@
+#Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?parametros=$1 [PT,L,QSA]
