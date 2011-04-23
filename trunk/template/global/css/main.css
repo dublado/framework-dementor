@@ -17,3 +17,33 @@
 body {
 	margin:20px;
 }
+
+.conteudo {
+border:1px dashed green;
+}
+
+.mright {
+border:1px solid red;
+width:250px;
+padding:10px;
+float:right;
+}
+
+.mleft {
+border:1px solid red;
+width:200px;
+padding:10px;
+float:left;
+}
+
+.meio {
+margin-left:230px;
+margin-right:280px;
+border:2px solid blue;
+
+}
+
+.footer {
+padding:20px;border:1px dashed;
+}
+

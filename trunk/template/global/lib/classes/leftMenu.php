@@ -3,7 +3,9 @@
 	{
 		function __construct ()
 		{
-	echo "left believer";
+	
+
+new BDo();
 	//echo get_include_path();
 			
 		}

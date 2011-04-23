@@ -7,7 +7,7 @@
 		function __construct ()
 		{
 
-			echo "rodapezao";		
+			//echo "rodapezao";		
 					
 		}
 
