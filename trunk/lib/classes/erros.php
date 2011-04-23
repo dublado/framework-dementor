@@ -12,10 +12,6 @@ class erros
 	function __destruct()
 	{
 	
-		//definir a exibicao por ir
-		parametros(0)=='phpinfo' ? phpinfo() : false;
-		//exit;
-		
 		if($this->param==true) { $this->depuracao(); }
 
 	

@@ -63,9 +63,9 @@ if(!file_exists(base)){
 echo "Defina Base(sugestão): " . $_SERVER["DOCUMENT_ROOT"] . '<br>';
 }
 
-//define("mode","dev"); //mode = dev ativa o depurador _GET _POST _REQUEST
+define("mode",""); //mode = dev ativa o depurador _GET _POST _REQUEST
 define("error_log",true); 
 // true para exeuctar error_log e false para imprimir na tela
 // algum servidores não deixam acessar o log diretamente do arquivo
 
-define("error-ip","192.168.1.113"); //define ip que verá a depuração
+define("error-ip","192.168.20.106"); //define ip que verá a depuração

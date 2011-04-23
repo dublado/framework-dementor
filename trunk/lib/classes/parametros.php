@@ -15,11 +15,12 @@ if(defined('mode'))
 			$load['erros'] = true;
 		break;
 		default:
-			$load['erros'] = true;
+			$load['erros'] = false;
 	}
 }
 
-isset($load) ? is_array($load) ? array_walk($load,'loader') : false : false;
+//var_dump($load);
+isset($load) ? is_array($load) ? array_walk($load,'class_preloader') : false : false;
 
 function parametros($param)
 {

@@ -5,7 +5,19 @@
 		{
 	
 
-new BDo();
+
+echo "
+menuzao<br>
+menuzao<br>
+menuzao<br>
+menuzao<br>
+menuzao<br>
+menuzao<br>
+menuzao<br>
+menuzao<br>
+menuzao<br>
+menuzao<br>
+";
 	//echo get_include_path();
 			
 		}

@@ -23,16 +23,8 @@ padding:10px;border:1px dashed;
 
 }
 
-}
 .conteudo {
 border:1px dashed green;
-}
-
-.mright {
-border:1px solid red;
-width:250px;
-padding:10px;
-float:right;
 }
 
 .mleft {
@@ -44,9 +36,7 @@ float:left;
 
 .meio {
 margin-left:230px;
-margin-right:280px;
 border:2px solid blue;
-
 }
 
 .footer {
