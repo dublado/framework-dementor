@@ -10,10 +10,11 @@ class forum extends siteman
 		
 		parent::__construct(
 		array(
-		"titulo"=>" la pagina",
-		"skel"=>"global",
+		"titulo"=>"agora é a página do forum!!!",
+		"skel"=>"header_left_footer",
 		"description"=>"i need a miracle"
 		));
+		
 		
 		//$this->bd = new BDo();
 	

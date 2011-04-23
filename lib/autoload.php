@@ -7,8 +7,13 @@ function loader($class,$param="",$path="")
 	if($find_class === false)
 	{
 
-	
+
+	switch($class)
+	{
+	    case "template":echo "oh noooooooooo";break;	
+		default:
 	new $class($param); 
+	}
 
 	}else{
 		$temp_path = split("/",$class);

@@ -41,12 +41,16 @@ class siteman
 			array_walk($meta,array(&$this,'gerameta'));
 			$meta = implode("\n",$meta);
 
+			if(isset($this->args['skel'])){
 			$cssglobal[] = base_url.'template/' . $this->args['skel'] . '/css/main.css'; //css padrao
+			}
 			$cssglobal[] = base_url . $this->base."/css/".$this->pagina.'.css'; 
 			array_walk($cssglobal,array(&$this,'geracssglobal'));
 			$cssglobal = implode("\n",$cssglobal);
 
+			if(isset($this->args['skel'])){
 			$jsglobal[] = base_url.'template/' . $this->args['skel'] . '/js/jquery.js';
+			}
 			$jsglobal[] = base_url.$this->base."/js/".$this->pagina.'.js';
 			array_walk($jsglobal,array(&$this,'gerajsglobal'));
 			$jsglobal = implode("\n",$jsglobal);
@@ -132,7 +136,9 @@ class siteman
 				//$php = 'template/global/' . $this->base.'/'.$this->pagina.'.php';//echo $php.'<br>';
 				
 				//correto
+				if(isset($this->args['skel'])){
 				set_include_path(base . '/template/'.$this->args['skel'].'/');//echo get_include_path();
+				}
 				//error_log("Passou aqui" . get_include_path() . $php);
 				if(file_exists(get_include_path() . $php)){
 					//error_log(get_include_path() .$php);

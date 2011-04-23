@@ -4,7 +4,6 @@
 		function __construct ()
 		{
 
-			echo "right believer";
 			
 		}
 	
