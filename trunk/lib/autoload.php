@@ -22,7 +22,7 @@ function loader($class,$param="",$path="")
 	    case "template"://echo "oh noooooooooo";
 	    break;	
 		default:
-	new $class($param); 
+        	new $class($param); 
 	}
 
 	}else{
@@ -36,7 +36,6 @@ function loader($class,$param="",$path="")
 
 function __autoload($class_name) 
 {
-
 
 	if(!class_exists($class_name))
 	{
@@ -81,11 +80,22 @@ function __autoload($class_name)
 				    }
 				    //echo "autoload: $php<br>";
 				    //error_log("Pagina carregada: " . $php);
-				    if(file_exists($php)){ require_once($php);  if(!class_exists($class_name)){echo "a classe $class_name não existe dentro de $php!";return false;}   }else{
+				    if(file_exists($php)){ require_once($php);  if(!class_exists($class_name)){
+				    
+				    if(Erro404)
+				    {
+				    require_once(base . pagina404);
+				    error_log("a classe $class_name não existe dentro de $php!");return false;
+				    }else
+{
+				    echo "a classe $class_name não existe dentro de $php!";return false;
+}				    
+				    }   }else{
 
 if(Erro404)
 {
-require_once(base . '/template/404/404.htm');
+require_once(base . pagina404);
+error_log("Não foi possivel carregar " . $php);
 }else{
 echo('Não foi possivel carregar ' . $php);
 }

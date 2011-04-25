@@ -10,6 +10,7 @@ switch($_SERVER['HTTP_HOST'])
 }
 
 define("Erro404",true);
+define("pagina404",'/template/404/404.htm');
 
 define("Titulo","Clube de Lideres Online"); //define titulo padrao
 
