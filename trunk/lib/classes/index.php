@@ -11,7 +11,7 @@ class index extends siteman
 	"description"=>"i need a miracle"
 	));
 
-//echo "o loko";
+    //echo "o loko";
 
 		
 	}

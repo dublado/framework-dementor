@@ -37,6 +37,7 @@ float:left;
 .meio {
 margin-left:230px;
 border:2px solid blue;
+margin-right:10px;
 }
 
 .footer {
