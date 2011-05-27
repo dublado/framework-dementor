@@ -1,4 +1,3 @@
-teste
 ----
 <font size='4'>*Versão 0.0.x (xxx-xx-xx)*</font>
 
